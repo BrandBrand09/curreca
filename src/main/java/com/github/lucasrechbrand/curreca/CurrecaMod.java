@@ -1,7 +1,6 @@
-package com.github.lucasrechbrand;
+package com.github.lucasrechbrand.curreca;
 
 import com.mojang.logging.LogUtils;
-import item.CurrecaItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.food.FoodProperties;
@@ -92,7 +91,7 @@ public class CurrecaMod {
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
-        CurrecaItems.register(modEventBus);
+        ItemInit.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -116,7 +115,7 @@ public class CurrecaMod {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS){
-            event.accept(CurrecaItems.BLANKRUNE);
+            event.accept(ItemInit.BLANK_RUNE);
         }
     }
 

@@ -1,4 +1,4 @@
-package com.github.lucasrechbrand;
+package com.github.lucasrechbrand.curreca;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;

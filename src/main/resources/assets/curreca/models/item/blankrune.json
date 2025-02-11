@@ -1,6 +1,0 @@
-{
-  "parent": "minecarft:item/generated",
-  "textures": {
-    "layer0": "curreca:item/blankrune"
-  }
-}
